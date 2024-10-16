@@ -1,3 +1,4 @@
+import React from 'react'
 import './index.css'
 import { SocialIcon } from 'react-social-icons'
 import 'react-social-icons/linkedin'
