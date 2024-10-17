@@ -2,6 +2,7 @@ import React from 'react'
 import Content from './Content'
 import Header from './Header'
 import './index.css'
+import ScrollIcon from './ScrollIcon'
 
 function Home() {
 
@@ -9,6 +10,7 @@ function Home() {
     <>
       <Header />
       <Content />
+      <ScrollIcon />
     </>
   )
 }

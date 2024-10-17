@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+#root {
+  max-width: 100vw;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -12,12 +16,12 @@ body::-webkit-scrollbar {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to right, RGBA(22, 22, 22, var(--opacity)), RGBA(22, 22, 22, var(--opacity))), url(./assets/bg.jpg);
+  background-image: linear-gradient(to right, RGBA(22, 22, 22, var(--opacity)), RGBA(22, 22, 22, var(--opacity))), url(./assets/bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  --opacity: 0.75;
+  --opacity: 0.6;
 }
 
 .Header {
@@ -33,19 +37,7 @@ body::-webkit-scrollbar {
   justify-content: right;
   align-items: center;
   text-align: left;
-  /* box-shadow: -10px 10px 10px -5px rgba(255,255,255,0.5); */
   flex-wrap: wrap;
-  z-index: 10;
-  /* background-color: RGBA(22, 22, 22);
-  opacity: var(--opacity); */
-}
-
-.HeaderText {
-  font-size: 7rem;
-  font-weight: 600;
-  color: #e2e2e2;
-  padding: 200px 50px 50px 50px;
-  text-align: center;
 }
 
 .HeaderOptionText {
@@ -80,44 +72,58 @@ body::-webkit-scrollbar {
 }
 
 .ContentHeader {
-  padding: 50px;
+  padding: 100px 50px 20px 50px;
   font-weight: 600;
   font-size: 2rem;
   text-align: left;
   color: #e2e2e2;
 }
 
+.ContentText {
+  font-size: 7rem;
+  font-weight: 600;
+  color: #e2e2e2;
+  padding: 200px 0 0 0;
+  text-align: center;
+}
+
 .ContentIntro {
-  padding: 50px 0 150px 0;
+  padding: 50px 0 300px 0;
   text-align: center;
   font-size: 1.1rem;
   font-style: italic;
+}
+
+.PresentationImage {
+  max-width: 300px;
+  max-height: 300px;
+  padding-bottom: 20px;
 }
 
 .ContentCardContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 50px;
-  padding: 0 0 100px 0;
+  padding: 0;
 }
 
 .ContentCard, .ExperienceCard {
-  padding: 25px;
+  padding: 30px;
   width:40%;
   min-width: 400px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(25px);
   border-radius: 10px;
   box-shadow: 0 5px 20px 0 rgba(0,0,0,1);
   color: #e2e2e2;
   text-align: center;
+  margin: 20px;
 }
 
 .ContentCardHeader {
   font-weight: 600;
   font-size: 1.5rem;
-  padding: 20px 0 50px 0;
+  padding: 0 0 20px 0;
 }
 
 .ContentCardBody {
@@ -125,16 +131,22 @@ body::-webkit-scrollbar {
   text-align: justify;
 }
 
+.ContentCardFooter {
+  font-style: italic;
+  padding-top: 20px;
+}
+
 .ExperienceCard {
   display: flex;
   flex-direction: column;
-  min-width: 1150px;
+  flex-grow:1;
+  width:100%;
+  max-width: 1150px;
 }
 
 .ExperienceCardHeader {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
 }
 
 .ExperienceCardCompanyDetails, li {
@@ -166,5 +178,63 @@ li {
 
 ul {
   margin: 0;
-  padding: 20px 20px 0 20px;
+  padding: 20px 0 0 20px;
+}
+
+.TechContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.TechCard {
+  width: 75px;
+  height: 90px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TechImage {
+  height: 32px;
+  width: 32px;
+}
+
+.TechName {
+  font-size: 0.9rem;
+  text-align: center;
+  height: 45px;
+}
+
+.ScrollIcon {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  font-size: 2rem;
+  z-index: 1;
+  color: #e2e2e2;
+  opacity: 0.75;
+  animation: 2s linear infinite alternate ScrollIconBounce;
+}
+
+@keyframes ScrollIconBounce {
+  0% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+a {
+  color: #e2e2e2;
 }
