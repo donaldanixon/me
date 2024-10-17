@@ -96,6 +96,7 @@ body::-webkit-scrollbar {
 
 .PresentationImage {
   max-width: 300px;
+  width: 100%;
   max-height: 300px;
   padding-bottom: 20px;
 }
@@ -103,14 +104,15 @@ body::-webkit-scrollbar {
 .ContentCardContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly ;
   padding: 0;
 }
 
 .ContentCard, .ExperienceCard {
   padding: 30px;
   width:40%;
-  min-width: 400px;
+  min-width: 200px;
+  flex-grow: 1;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(25px);
   border-radius: 10px;
