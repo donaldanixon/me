@@ -96,7 +96,7 @@ function Content() {
             <img src={M365PP} className='PresentationImage'/>
             <div className="ContentCardHeader">Power Platform, Meet Web API</div>
             <div className="ContentCardBody">Reviewing the pros and cons of Custom Connectors and the Power Automate HTTP action, with a demo building a custom connector for an AI image generation API and using it in a Power App</div>
-            <div className='ContentCardFooter'>Presented to Manawatū M365 Meetup in February 2023 (lost recording)</div>
+            <div className='ContentCardFooter'>Presented to Manawatū M365 Meetup in February 2023 (recording unavailable)</div>
           </div>
         </div>
 
