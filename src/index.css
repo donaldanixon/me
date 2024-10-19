@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  width: 100vw;
 }
 
 #root {
@@ -29,7 +30,7 @@ body::-webkit-scrollbar {
   top: 0px;
   left: 0px;
   color: #e2e2e2;
-  height: 120px;
+  height: 100px;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -50,7 +51,7 @@ body::-webkit-scrollbar {
 }
 
 .HeaderIconsBox {
-  padding: 30px 20px 20px 0px ;
+  padding: 20px;
   width: 20%;
   min-height: 60px;
   flex-grow: 1;
@@ -60,6 +61,23 @@ body::-webkit-scrollbar {
   gap: 12.5px;
 }
 
+.ProfileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 0 0;
+  width: calc(100%-100px);
+  margin: 0 auto;
+}
+
+.ProfilePic {
+  max-height: 200px;
+  max-width: 200px;
+  border-radius: 50%;
+  border: 2px solid #e2e2e2;
+  box-shadow: 0 5px 20px 0 rgba(0,0,0,1);
+}
+
 .Content {
   width: 100%;
   max-width: 1200px;
@@ -67,12 +85,10 @@ body::-webkit-scrollbar {
   text-align: left;
   color: #e2e2e2;
   z-index: 0;
-  /* background-color: RGBA(22, 22, 22);
-  opacity: var(--opacity); */
 }
 
 .ContentHeader {
-  padding: 100px 50px 20px 50px;
+  padding: 50px 50px 20px 50px;
   font-weight: 600;
   font-size: 2rem;
   text-align: left;
@@ -80,11 +96,12 @@ body::-webkit-scrollbar {
 }
 
 .ContentText {
-  font-size: 7rem;
+  font-size: min(25vw, 7rem);
   font-weight: 600;
   color: #e2e2e2;
-  padding: 200px 0 0 0;
+  padding: 50px 0 0 0;
   text-align: center;
+  max-width: 100%;
 }
 
 .ContentIntro {
@@ -110,7 +127,7 @@ body::-webkit-scrollbar {
 
 .ContentCard, .ExperienceCard {
   padding: 30px;
-  width:40%;
+  width: 40%;
   min-width: 200px;
   flex-grow: 1;
   background: rgba(255, 255, 255, 0.1);
@@ -149,6 +166,7 @@ body::-webkit-scrollbar {
 .ExperienceCardHeader {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .ExperienceCardCompanyDetails, li {
@@ -214,12 +232,27 @@ ul {
 .ScrollIcon {
   position: absolute;
   bottom: 20px;
-  right: 50px;
+  right: calc(50vw - 16px);
   font-size: 2rem;
   z-index: 1;
   color: #e2e2e2;
   opacity: 0.75;
   animation: 2s linear infinite alternate ScrollIconBounce;
+}
+
+@media (max-width: 500px) {
+  .ScrollIcon {
+    right: 20px;
+  }
+
+  .ProfileContainer, .ContentText, .ContentIntro {
+    padding: 20px 0 0 0;
+  }
+
+  .ContentIntro {
+    padding-bottom: 20px;
+  }
+
 }
 
 @keyframes ScrollIconBounce {

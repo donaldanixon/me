@@ -16,12 +16,16 @@ import Docker from './assets/docker.svg'
 import OpenAILogo from './assets/openailogo.svg'
 import Comfy from './assets/sd.png'
 import Methanex from './assets/Methanex.svg'
+import ProfilePic from './assets/ProfilePic.jpg'
 
 function Content() {
 
   return (
     <>
       <div className="Content">
+        <div className="ProfileContainer">
+          <img src={ProfilePic} className="ProfilePic" />
+        </div>
         <div className="ContentText">Donald Nixon</div>
         <div className="ContentIntro">
           Analyst Programmer - Crafting elegant solutions to solve problems
