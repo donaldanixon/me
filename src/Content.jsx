@@ -6,6 +6,7 @@ import M365AI from './assets/M365-AI.jpg'
 import M365PP from './assets/M365-PP.jpg'
 import Massey from './assets/Massey.svg'
 import Python from './assets/python.svg'
+import JS from './assets/js.svg'
 import PowerApps from './assets/powerapps.svg'
 import PowerAutomate from './assets/powerautomate.svg'
 import PowerShell from './assets/PowerShell.svg'
@@ -14,7 +15,6 @@ import Azure from './assets/azure.svg'
 import NodeJS from './assets/nodejs.svg'
 import Docker from './assets/docker.svg'
 import OpenAILogo from './assets/openailogo.svg'
-import Comfy from './assets/sd.png'
 import Methanex from './assets/Methanex.svg'
 import DTSL from './assets/dtsl.png'
 import ProfilePic from './assets/ProfilePic.jpg'
@@ -39,6 +39,10 @@ function Content() {
               <div className="TechCard">
                 <img src={Python} className='TechImage' />
                 <div className="TechName">Python</div>
+              </div>
+              <div className="TechCard">
+                <img src={JS} className='TechImage' />
+                <div className="TechName">JavaScript</div>
               </div>
               <div className="TechCard">
                 <img src={PowerApps} className='TechImage' />
@@ -75,10 +79,6 @@ function Content() {
               <div className="TechCard">
                 <img src={OpenAILogo} className='TechImage' />
                 <div className="TechName">OpenAI API</div>
-              </div>
-              <div className="TechCard">
-                <img src={Comfy} className='TechImage' />
-                <div className="TechName">Stable Diffusion</div>
               </div>
             </div>
           </div>
