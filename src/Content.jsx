@@ -1,6 +1,5 @@
 import './index.css'
 import Nodero from './assets/Nodero.svg'
-import ImagineTees from './assets/ImagineTees.svg'
 import React from './assets/React.svg'
 import M365AI from './assets/M365-AI.jpg'
 import M365PP from './assets/M365-PP.jpg'
@@ -117,21 +116,6 @@ function Content() {
                   <li>Power Platform/SharePoint Developer; analysing, architecting, building, implementing and documenting solutions for clients that accelerate their business success</li>
                   <li>Built AI solutions using custom ML models, OpenAI API, and Microsoft Copilot</li>
                   <li>Implemented an entire Client Management System for a local not-for-profit, enabling them to move to a cloud solution with no ongoing cost</li>
-                </ul>
-              </div>
-            </div>
-            <div className="ExperienceCard">
-              <div className='ExperienceCardHeader'>
-                <div className='ExperienceCardCompanyDetails'>
-                  <div className="ExperienceCardCompany">ImagineTees</div>
-                  <div className="ExperienceCardJobTitle">AI Engineer (Freelance)</div>
-                  <div className="ExperienceCardJobDate">March 2024 - July 2024</div>
-                </div>
-                <img src={ImagineTees} alt="ImagineTees logo" className="ExperienceCardLogo" />
-              </div>
-              <div className="ExperienceCardBody">
-                <ul>
-                  <li>Built an AI backend for the creation of images and setup pipelines for future updates for virtual try-on for clothing using Python and Docker</li>
                 </ul>
               </div>
             </div>
