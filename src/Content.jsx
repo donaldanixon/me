@@ -16,6 +16,7 @@ import Docker from './assets/docker.svg'
 import OpenAILogo from './assets/openailogo.svg'
 import Comfy from './assets/sd.png'
 import Methanex from './assets/Methanex.svg'
+import DTSL from './assets/dtsl.png'
 import ProfilePic from './assets/ProfilePic.jpg'
 
 function Content() {
@@ -28,7 +29,7 @@ function Content() {
         </div>
         <div className="ContentText">Donald Nixon</div>
         <div className="ContentIntro">
-          Analyst Programmer - Crafting elegant solutions to solve problems
+          Analyst Programmer with 15+ years of IT experience crafting elegant solutions that solve problems
         </div>
 
         <div className="ContentHeader">My Favourite Tech</div>
@@ -96,7 +97,7 @@ function Content() {
             <img src={M365PP} className='PresentationImage'/>
             <div className="ContentCardHeader">Power Platform, Meet Web API</div>
             <div className="ContentCardBody">Reviewing the pros and cons of Custom Connectors and the Power Automate HTTP action, with a demo building a custom connector for an AI image generation API and using it in a Power App</div>
-            <div className='ContentCardFooter'>Presented to Manawatū M365 Meetup in February 2023 (recording unavailable)</div>
+            <div className='ContentCardFooter'>Presented to Manawatū M365 Meetup in February 2023<br /> (recording unavailable)</div>
           </div>
         </div>
 
@@ -213,6 +214,18 @@ function Content() {
                   <li>Sustained strong relationships with users, system owners, business leaders and vendors/suppliers to proactively identify potential system improvements</li>
                   <li>Wrote and delivered the training material for various key applications</li>
                 </ul>
+              </div>
+            </div>
+            <div className="ExperienceCard">
+              <div className='ExperienceCardHeader'>
+                <div className='ExperienceCardCompanyDetails'>
+                  <div className="ExperienceCardCompany">DTSL</div>
+                  <div className="ExperienceCardJobTitle">Field Service Engineer</div>
+                  <div className="ExperienceCardJobDate">2008 - 2012</div>
+                </div>
+                <img src={DTSL} alt="DTSL Logo" className="ExperienceCardLogo" />
+              </div>
+              <div className="ExperienceCardBody">
               </div>
             </div>
           </div>
