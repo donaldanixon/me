@@ -104,6 +104,28 @@ body::-webkit-scrollbar {
   max-width: 100%;
 }
 
+.animatedText {
+  fill: transparent;
+  stroke: #e2e2e2;
+  stroke-width: 0.2;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: mainHeaderAnimation 5s ease-in-out forwards; 
+}
+
+@keyframes mainHeaderAnimation {
+  0% {
+    stroke-dashoffset: 300;
+  }
+  90% {
+    fill: transparent
+  }
+  100% {
+    fill: #e2e2e2;
+    stroke-dashoffset: 0;
+  }
+}
+
 .ContentIntro {
   padding: 50px 0 300px 0;
   text-align: center;
